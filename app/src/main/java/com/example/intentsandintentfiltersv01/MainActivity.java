@@ -31,16 +31,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i = new Intent(MainActivity.this,HomeActivity.class);
+                Intent i = new Intent();
+                i.setClassName("com.example.intentsandintentfiltersv02", "com.example.intentsandintentfiltersv02.MainActivity");
                 startActivity(i);
-
-//                Intent i = new Intent(Intent.ACTION_WEB_SEARCH);
-//                i.putExtra(SearchManager.QUERY, "Java Institute");
-//                startActivity(i);
-
-                // i.setClassName("com.example.intentsandintentfiltersv02","com.example.intentsandintentfiltersv02.MainActivity");
-                //Intent i = new Intent("android.media.action.STILL_IMAGE_CAMERA");
-
             }
         });
 
